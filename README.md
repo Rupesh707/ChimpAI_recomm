@@ -1,1 +1,1 @@
-# ChimpAI_recomm
+# ChimpAI_recommendations
