@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div style="background-color:#7794a1" class="row">
+    <div class="col-lg-6">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 style="padding-left:50px;" class="big-heading">Chimp</h1>
+            </div>
+            <div style="text-align:left; padding-top:20px;" class="col-lg-6">
+                <img src="{{ url_for('static', filename='images/ChimpAI.png')}}" alt="Upload" width="80" height="80">
+            </div>
+        </div>
+        <h2 style="text-align:left; padding-left:50px;">Beauty, Smartly Tailored - ChimpAI</h2>
+    </div>
+    <div style="padding-top:25px; padding-left:70px;" class="col-lg-6">
+        <div class="dropdown">
+            <button>On what basis should the recommendation be?</button>
+            <div class="dropdown-content">
+            <a href="{{ url_for('contentBasedFiltering') }}">Content Based Filtering</a>
+            <a href="{{ url_for('collaborativeFiltering') }}">Collaborative Filtering</a>
+            </div>
+        </div>
+        <img style="padding-top:0px;" src="{{ url_for('static', filename='images/grocery.png')}}" alt="Upload" width="180" height="150">
+    </div>
+</div>
+<div style="background-color:white" class="row">
+    <div style="height:440px;" class="col-lg-6 overflow-auto">
+        <div class="row">
+            {% for item in items %}
+                <div class="col-sm-12">
+                    <div class="card" style="width: 650px;">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h5 class="card-title"> {{ item[1] }}</h5>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p class="card-text"> {{ item[4] }} </p>
+                                    <p class="card-text"> {{ item[5] }} </p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <form method="post" action={{ route }}>
+                                        <button class="btn btn-outline-dark btn-sm" type="submit" name="button" value={{ item[0] }}>Add to Cart</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="col-lg-6">
+        {% if recommendation|count == 0 %}
+            <img style="margin:70px auto 0;" src="{{ url_for('static', filename='images/empty.png')}}" alt="Upload" width="220" height="190">
+            <h3> Your cart is empty </h2>
+            <h4> No recommendations yet.</h3>
+        {% else %}
+            <div class="row">
+                <div style="padding-top:10px;" class="col-sm-4">
+                    <h3> Your cart </h3>
+                </div>
+                <div style="padding-top:10px;" class="col-sm-4">
+                    {{ cart }}
+                </div>
+                <div class="col-sm-4">
+                    <form style="padding-top:10px;" method="post" action={{ route }}>
+                        <button class="btn btn-outline-dark btn-sm" type="submit" name="button" value="refresh">REMOVE</button>
+                    </form>
+                </div>
+            </div>
+            <h2 style="padding-top:30px;" > You may also like </h2>
+            <div id="navCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="card col-sm-4">
+                                <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+                                <div class="container">
+                                  <h4> {{ recommendation[0][1] }}</h4>
+                                  <p> {{ recommendation[0][5] }}</p>
+                                  <p> {{ recommendation[0][6] }}</p>
+                                </div>
+                            </div>
+                            <div class="card col-sm-4">
+                                <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+                                <div class="container">
+                                  <h4> {{ recommendation[1][1] }}</h4>
+                                  <p> {{ recommendation[1][5] }}</p>
+                                  <p> {{ recommendation[1][6] }}</p>
+                                </div>
+                            </div>
+                            <div class="card col-sm-4">
+                                <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+                                <div class="container">
+                                  <h4>{{ recommendation[2][1] }}</h4>
+                                  <p> {{ recommendation[2][5] }}</p>
+                                  <p> {{ recommendation[2][6] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="card col-sm-4">
+                                <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+                                <div class="container">
+                                  <h4>{{ recommendation[3][1] }}</h4>
+                                  <p> {{ recommendation[3][5] }}</p>
+                                  <p> {{ recommendation[3][6] }}</p>
+                                </div>
+                            </div>
+                            <div class="card col-sm-4">
+                                <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+                                <div class="container">
+                                  <h4>{{ recommendation[4][1] }}</h4>
+                                  <p> {{ recommendation[4][5] }}</p>
+                                  <p> {{ recommendation[4][6] }}</p>
+                                </div>
+                            </div>
+                            <div class="card col-sm-4">
+                                <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+                                <div class="container">
+                                  <h4>{{ recommendation[5][1] }}</h4>
+                                  <p> {{ recommendation[5][5] }}</p>
+                                  <p> {{ recommendation[5][6] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="card col-sm-4">
+                                <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+                                <div class="container">
+                                  <h4>{{ recommendation[6][1] }}</h4>
+                                  <p> {{ recommendation[6][5] }}</p>
+                                  <p> {{ recommendation[6][6] }}</p>
+                                </div>
+                            </div>
+                            <div class="card col-sm-4">
+                                <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+                                <div class="container">
+                                  <h4>{{ recommendation[7][1] }}</h4>
+                                  <p> {{ recommendation[7][5] }}</p>
+                                  <p> {{ recommendation[7][6] }}</p>
+                                </div>
+                            </div>
+                            <div class="card col-sm-4">
+                                <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+                                <div class="container">
+                                  <h4>{{ recommendation[8][1] }}</h4>
+                                  <p> {{ recommendation[8][5] }}</p>
+                                  <p> {{ recommendation[8][6] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="card col-sm-4">
+                                <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+                                <div class="container">
+                                  <h4>{{ recommendation[9][1] }}</h4>
+                                  <p> {{ recommendation[9][5] }}</p>
+                                  <p> {{ recommendation[9][6] }}</p>
+                                </div>
+                            </div>
+                            <div class="card col-sm-4">
+                                <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+                                <div class="container">
+                                  <h4>{{ recommendation[10][1] }}</h4>
+                                  <p> {{ recommendation[10][5] }}</p>
+                                  <p> {{ recommendation[10][6] }}</p>
+                                </div>
+                            </div>
+                            <div class="card col-sm-4">
+                                <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+                                <div class="container">
+                                  <h4>{{ recommendation[11][1] }}</h4>
+                                  <p> {{ recommendation[11][5] }}</p>
+                                  <p> {{ recommendation[11][6] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

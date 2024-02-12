@@ -1,0 +1,165 @@
+aisle_id,aisle
+1,makeup > face > contour
+2,brand > l'oreal paris
+3,makeup > face > foundation
+4,health & wellness > good for you > super food
+5,makeup > lips > lip stain
+6,natural > shop by concern > acne treatment
+7,brand > nivea
+8,natural > skin > face wash
+9,mom & baby > maternity wear > maternity bra
+10,makeup > face > concealer
+11,personal care > face > moisturizer
+12,skin > body care > lotions & creams
+13,makeup > lips > liquid lipstick
+14,makeup > lips > lip balm
+15,nfba 2020 nominees online sale > 
+16,hair > shop by concern > dry & frizzy hair
+17,luxe > fragrance > perfumes (edp/edt)
+18,personal care > hands & feet > hand creams
+19,men's store > shop by concern > anti acne
+20,mom & baby > baby care > wipes & buds
+21,health & wellness > sports nutrition > pre workout
+22,skin > shop by concern > skin brightening
+23,personal care > bath & shower > conditioner
+24,fragrance > women > perfumes (edt & edp)
+25,makeup > face > blush
+26,skin > shop by concern > pore care
+27,luxe > fragrance > gifts
+28,natural > hair > conditioner
+29,skin > moisturizers > face moisturizer & day cream
+30,makeup > makeup kits > face palettes
+31,natural > types of skin > oily skin
+32,makeup > makeup kits > customize your palette
+33,luxe > makeup > palettes
+34,health & wellness > sports nutrition > bulk
+35,makeup > eyes > under eye concealer
+36,makeup > face > bronzer
+37,men's store > skin care > facewash
+38,makeup > nails > nail polish
+39,mom & baby > kids care > kids makeup
+40,category not specified > 
+41,makeup > eyes > kajal
+42,luxe > makeup > face
+43,makeup > eyes > eyeliner
+44,hair > hair styling > hair color
+45,hair > shop by hair type > curly & wavy
+46,personal care > bath & shower > shampoo
+47,natural > hair > shampoo & cleanser
+48,makeup > lips > lipstick
+49,natural > shop by concern > hairfall
+50,skin > masks > masks & peels
+51,natural > makeup > lipstick
+52,hair > hair care > conditioner
+53,natural > skin > face oils
+54,natural > aromatherapy > massage oils
+55,makeup > face > compact
+56,personal care > face > facewash
+57,hair > shop by concern > color protection
+58,natural > types of skin > combination skin
+59,makeup > face > loose powder
+60,luxe > makeup > lips
+61,skin > shop by concern > skin dryness
+62,makeup > eyes > eye shadow
+63,natural > makeup > eyeliner
+64,natural > skin > sunscreen
+65,men's store > gifts @ 
+66,health & wellness > good for you > green tea
+67,fragrance > women > deodorants/roll-ons
+68,skin > body care > massage oils
+69,appliances > hair styling tools > straighteners
+70,health & wellness > sexual wellness > condoms
+71,skin > cleansers > cleanser
+72,brand > vlcc
+73,makeup > face > highlighters
+74,brand > biotique
+75,natural > trending searches > tea tree oil
+76,personal care > body > lotions & creams
+77,skin > cleansers > scrubs & exfoliators
+78,skin > cleansers > face wash
+79,brand > himalaya
+80,fragrance > women > body mist/spray
+81,makeup > gifts @ 
+82,brand >  naturals
+83,natural > shop by concern > dandruff
+84,makeup > new launches
+85,natural > types of skin > dry skin
+86,hair > hair care > hair creams & masks
+87,natural > hair > hair oil
+88,luxe > skin > face
+89,hair > hair care > shampoo
+90,natural > skin > cleanser
+91,hair > shop by concern > split ends
+92,men's store > skin care > moisturizers
+93,health & wellness > sports nutrition > lean
+94,skin > toners > toners & mists
+95,natural > shop by concern > tan removal
+96,skin > masks > sheet masks
+97,men's store > shaving > aftershave lotion
+98,personal care > body > deodorants/roll-ons
+99,natural > shop by concern > anti aging
+100,luxe > makeup > nails
+101,hair > hair care > hair oil
+102,fragrance > men > perfumes (edt & edp)
+103,natural > shop by concern > skin lightening
+104,natural > body care > body lotions
+105,health & wellness > shop by concern > immunity
+106,men's store > hair care > shampoo
+107,natural > types of skin > normal skin
+108,brand > lakme
+109,health & wellness > sports nutrition > post workout
+110,health & wellness > shop by concern > bones & joints
+111,makeup > eyes > eye makeup remover
+112,mom & baby > maternity wear > maternity dress
+113,makeup > combos @ 
+114,makeup > eyes > eye brow enhancers
+115,natural > makeup > foundation & concealer
+116,natural > shop by concern > pigmentation
+117,fragrance > gifts @ 
+118,mom & baby > health & safety > detergents & cleansers
+119,makeup > lips > lip gloss
+120,luxe > makeup > eyes
+121,natural > skin > moisturizer
+122,luxe > brand > kama ayurveda
+123,mom & baby > baby care > baby oil
+124,men's store > fragrance > deodorants/roll-ons
+125,natural > body care > hands and feet care
+126,men's store > wellness > sports nutrition
+127,natural > aromatherapy > essential oils
+128,personal care > men's grooming > beard & moustache care
+129,hair > shop by hair type > straight
+130,skin > moisturizers > night cream
+131,luxe > fragrance > colognes
+132,personal care > bath & shower > soaps
+133,makeup > face > face primer
+134,skin > moisturizers > serums & essence
+135,skin > body care > soaps
+136,skin > shop by concern > sun protection
+137,luxe > shop by concern > anti-ageing
+138,makeup > lips > lip crayon
+139,natural > body care > oral care
+140,makeup > makeup kits > eye palettes
+141,natural > hair > hair masks
+142,personal care > hands & feet > hand sanitizer
+143,makeup > tools & brushes > sponges & applicators
+144,makeup > face > bb & cc cream
+145,skin > eye care > dark circles & wrinkles
+146,health & wellness > weight management > weight gain
+147,men's store > wellness > sexual wellness
+148,skin > sun care > body sunscreen
+149,hair > hair styling > gels & waxes
+150,natural > shop by concern > dry & frizzy hair
+151,skin > shop by concern > oil control
+152,skin > moisturizers > face oils
+153,personal care > hands & feet > handwash
+154,skin > kits & combos > combos @ 
+155,skin > moisturizers > bb & cc cream
+156,makeup > eyes > mascara
+157,luxe > shop by concern > oil control
+158,hair > tools & accessories > hair brushes
+159,skin > kits & combos > facial kits
+160,brand > lotus herbals
+161,natural > skin > under eye care
+162,makeup > lips > lip liner
+163,natural > makeup > lip balm & gloss
+164,makeup > tools & brushes > makeup pouches
